@@ -58,6 +58,26 @@ body {
     display: flex;
     width: 100%;
 }
+.home-btn {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: flex;
+    background-color: #000;
+    color: white;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
 
 /* Sidebar Styles */
 .sidebar {
@@ -123,74 +143,4 @@ body {
 
 .item img:hover {
     transform: scale(1.05);
-}
-/* Home Button (English) */
-.home-btn {
-    text-decoration: none;
-    color: white;
-    cursor: pointer;
-    transition: color 0.3s ease-in-out;
-}
-
-.home-btn:hover {
-    color: #ccc;
-}
-
-/* Responsive Sidebar */
-@media (max-width: 768px) {
-    .sidebar {
-        width: 200px;
-        padding: 15px;
-    }
-
-    .explore {
-        margin-left: 210px;
-        padding: 15px;
-    }
-}
-
-/* Adjustments for Small Screens */
-@media (max-width: 500px) {
-    .sidebar {
-        width: 100%;
-        height: auto;
-        position: relative;
-        padding: 10px;
-        text-align: center;
-    }
-
-    .sidebar ul {
-        display: flex;
-        justify-content: center;
-        gap: 10px;
-    }
-
-    .sidebar ul li {
-        padding: 5px;
-    }
-
-    .explore {
-        margin-left: 0;
-        padding: 10px;
-    }
-
-    .grid {
-        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-        gap: 5px;
-    }
-
-    .item img {
-        border-radius: 5px;
-    }
-
-    .lightbox img {
-        max-width: 95%;
-        max-height: 85%;
-    }
-
-    .close-btn {
-        font-size: 30px;
-        right: 15px;
-        top: 10px;
-    }
 }
