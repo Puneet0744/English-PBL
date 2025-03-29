@@ -153,9 +153,18 @@ body {
     }
 
     .sidebar {
+        display: flex;
+        flex-direction: column;
         width: 100%;
         height: auto;
         position: relative;
+        align-items: center;
+        justify-content: center;
+    }
+    ul{
+        display: flex;
+        justify-content: space-evenly;
+        gap: 70px;
     }
 
     .explore {
