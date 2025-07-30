@@ -1,11 +1,107 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>English Website</title>
     <link rel="stylesheet" href="style.css">
+
+    <style>
+        .comments-section {
+            margin-top: 40px;
+            text-align: center;
+        }
+
+        .comments-section h2 {
+            font-size: 28px;
+            margin-bottom: 20px;
+            color: #ffffff;
+        }
+
+        .comments-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            padding: 0 20px;
+        }
+
+        .comment-card {
+            background-color: #1c1c1c;
+            color: #ffffff;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+            font-style: italic;
+            position: relative;
+        }
+
+        .comment-card span {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+            color: #1abc9c;
+        }
+
+        /* Quote Box */
+        .quote-box {
+            background-color: #1c1c1c;
+            color: #1abc9c;
+            padding: 20px;
+            text-align: center;
+            font-style: italic;
+            border-left: 5px solid #1abc9c;
+            margin: 20px auto;
+            max-width: 800px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+        }
+
+        .quote-box span {
+            display: block;
+            margin-top: 10px;
+            color: #ffffff;
+            font-style: normal;
+            font-weight: bold;
+        }
+
+        /* Introduction Card */
+        .intro-card,
+        .course-overview {
+            background-color: #121212;
+            color: white;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 10px;
+            max-width: 800px;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+        }
+
+        .intro-card h2,
+        .course-overview h2 {
+            color: #1abc9c;
+            margin-bottom: 10px;
+        }
+
+        .coordinator-card {
+            background-color: #1c1c1c;
+            color: white;
+            margin: 20px auto;
+            padding: 15px;
+            border-radius: 8px;
+            max-width: 500px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(255, 255, 255, 0.05);
+            font-size: 1.1em;
+        }
+
+        .coordinator-card h3 {
+            color: #1abc9c;
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
+
 <body>
     <div class="container">
         <nav class="sidebar">
@@ -19,15 +115,66 @@
         </nav>
 
         <main class="explore" id="content">
-            <div class="grid">
-                <div class="item"><img src="https://source.unsplash.com/random/300x300?sig=1" alt="Random"></div>
-                <div class="item"><img src="https://source.unsplash.com/random/300x300?sig=2" alt="Random"></div>
-                <div class="item"><img src="https://source.unsplash.com/random/300x300?sig=3" alt="Random"></div>
-                <div class="item"><img src="https://source.unsplash.com/random/300x300?sig=4" alt="Random"></div>
-            </div>
+            <!-- Quote Section -->
+            <section class="quote-box">
+                <p>“Learning another language is not only learning different words, but learning another way to think.”
+                </p>
+                <span>– Flora Lewis</span>
+            </section>
+
+            <!-- Introduction Card -->
+            <section class="intro-card">
+                <h2>Welcome to Communicative English</h2>
+                <p>This course offers more than just grammar and vocabulary. It is a journey through literature,
+                    real-world communication, and digital expression. Guided by experienced faculty, you'll grow in
+                    confidence, critical thinking, and global awareness.</p>
+            </section>
+
+            <!-- Course Coordinator Intro -->
+            <section class="coordinator-card">
+                <h3>Course Coordinator</h3>
+                <div class="grid">
+                    <div class="item"><img src="Ramya Maam photo.png" alt="faculty photo"></div>
+                </div>
+                <p>Dr. Ramya S</p>
+            </section>
+
+            <!-- Course Overview Box -->
+            <section class="course-overview">
+                <h2>Course Overview</h2>
+                <p><strong>Communicative English</strong> focuses on building essential language and professional skills
+                    through reading, writing, digital literacy, and spoken English. The course blends academic learning
+                    with employability training, and integrates global themes through literature and the UN Sustainable
+                    Development Goals (SDGs).</p>
+            </section>
+
+
+
+            <section class="comments-section">
+                <h2>What Students Say</h2>
+                <div class="comments-grid">
+                    <div class="comment-card">
+                        <p>"The Communicative English course helped me improve my presentation and writing skills. The
+                            modules were practical and engaging."</p>
+                        <span>– Puneet Khandelwal</span>
+                    </div>
+                    <div class="comment-card">
+                        <p>"The faculty was very supportive and interactive. Their teaching style made learning English
+                            enjoyable and easy to apply in real life."</p>
+                        <span>– Gurvansh</span>
+                    </div>
+                    <div class="comment-card">
+                        <p>"I loved how literature was linked with global issues through the SDGs. It made reading
+                            meaningful and relevant."</p>
+                        <span>– Kushagra Chandra</span>
+                    </div>
+                </div>
+            </section>
+
         </main>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
